@@ -1,0 +1,37 @@
+{
+  "name": "lovelace_tribute",
+  "version": "1.0.0",
+  "description": "A tribute to lindalovelace",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaydurant/LoveaceTribute.git"
+  },
+  "author": "jason durant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaydurant/LoveaceTribute/issues"
+  },
+  "homepage": "https://github.com/jaydurant/LoveaceTribute#readme",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-react": "^6.5.0",
+    "babelify": "^7.2.0",
+    "bootstrap-sass": "^3.3.6",
+    "browserify": "^13.0.0",
+    "eslint": "^2.1.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cssnano": "^2.1.1",
+    "gulp-eslint": "^2.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.2",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
