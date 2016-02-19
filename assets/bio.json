@@ -1,0 +1,21 @@
+{
+	"bio" : {
+		"name":"Ada Lovelace",
+		"tagLine":"World's first programmer"
+
+	},
+	"timeLine" : [
+		{"year":"1815","content":"Born to Lord Byron as his only legitimate child as the Countess of Lovelace"},
+		{"year":"1824","content":"Lord Byron dies when she is 8 years old"},
+		{"year":"1829","content":"Ada was paralyzed from a bout of measles confined to bederest"},
+		{"year":"1831","content":"She was able to walk crutches after being bedridden while developing her mathematical and technological skills"},
+		{"year":"1833","content":"Ada is introduced to Charles Babage through her tutor Mary Somerville"},
+		{"year":"1835","content":"Married to William King-Noel thus becoming the Lady King"},
+		{"year":"1843","content":"Lovelace translated a article and added notes based on the Analytical Machine which was well received by the scientific community. These notes describe an algorithm which is now considered the world's first."},
+		{"year":"1851","content":"She attempted with friends to devise a mathematical means for successfully large bets"},
+		{"year":"1852","content":"Lovelace died the same age as her father from uterine cancer. She was buried in Nottinghamshire"}
+
+	]
+
+
+}

@@ -18,9 +18,10 @@ var reload = browserSync.reload;
 
 
 var b = browserify({
-		entries: './develop-js/app.js',
+		entries: './develop-js/app.jsx',
 		transform: [babelify],
 		plugin: [watchify],
+		extensions:['.jsx'],
 		cache:{},
 		packageCache: {},
 		debug:true
@@ -34,7 +35,7 @@ function bundle(){
 		   .pipe(source('app.js'))
 		   .pipe(buffer())
 		   .pipe(sourcemaps.init({loadMaps:true}))
-		   .pipe(sourcemaps.write('js/'))
+		   .pipe(sourcemaps.write('./'))
 		   .pipe(gulp.dest('js/'))
 		   .pipe(browserSync.stream());
 }
