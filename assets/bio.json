@@ -2,7 +2,6 @@
 	"bio" : {
 		"name":"Ada Lovelace",
 		"tagLine":"World's first programmer"
-
 	},
 	"timeLine" : [
 		{"year":"1815","content":"Born to Lord Byron as his only legitimate child as the Countess of Lovelace"},
@@ -14,8 +13,14 @@
 		{"year":"1843","content":"Lovelace translated a article and added notes based on the Analytical Machine which was well received by the scientific community. These notes describe an algorithm which is now considered the world's first."},
 		{"year":"1851","content":"She attempted with friends to devise a mathematical means for successfully large bets"},
 		{"year":"1852","content":"Lovelace died the same age as her father from uterine cancer. She was buried in Nottinghamshire"}
+	],
+	"wikiUrl":"https://en.wikiquote.org/wiki/Ada_Lovelace",
+	"quote": {
+		"url":"https://en.wikipedia.org/wiki/Ada_Lovelace",
+		"content":"Perhaps you have felt already, from the tone of my letter, that I am more than ever now the bride of science. Religion to me is science, and science is religion. In that deeply-felt truth lies the secret of my intense devotion to the reading of God's natural works. It is reading Him. His will — His intelligence ; and this again is learning to obey and to follow (to the best of our power) that will! For he who reads, who interprets the Divinity with a true and simple heart, then obeys and submits in acts and feelings as by an impupulse and instinct. He can't help doing so. At least, it appears so to me.",
+		"author":"Englische Studien, Volume 19 (1894), Leipzig; O.R. Reisland, 'Byron's Daughter', p. 157-158"
 
-	]
+	}
 
 
 }

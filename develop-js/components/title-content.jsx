@@ -4,7 +4,7 @@ function ContentTitle(props){
 	return (
 			<section>
 				<h1>{props.pageTitle}</h1>
-				<h2>{props.pageTagLine}</h2>
+				<h2>{props.tagLine}</h2>
 			</section>
 		);
 }
