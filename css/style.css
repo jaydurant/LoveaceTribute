@@ -4393,3 +4393,19 @@ fieldset {
 
 button {
   cursor: pointer; }
+
+.center-text {
+  text-align: center; }
+
+.center-column {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  float: none; }
+
+.center-block {
+  margin-left: auto;
+  margin-right: auto;
+  float: none; }

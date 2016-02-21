@@ -2,11 +2,11 @@ import React from 'react';
 
 function Timeline(props){
 	const timelineList = props.timelineArray;
-	let newArray = timelineList.map((val,i) => <li key={i}><strong>{val.year} </strong>{val.content}</li>);
+	let newArray = timelineList.map((val,i) => <li key={i}><strong>-{val.year}: </strong>{val.content}</li>);
 	return(
-			<section>
-				<h3>Here is a time line of Ada Lovelace's life:</h3>
-				<ul>
+			<section className="row">
+				<h3 className="col-sm-8 center-block">Here is a time line of Ada Lovelace's life:</h3>
+				<ul className='col-sm-10 center-block'>
 					{newArray}
 				</ul>
 			</section>

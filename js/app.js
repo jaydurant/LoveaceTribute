@@ -139,11 +139,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function ContentImage(props) {
 	return _react2.default.createElement(
 		"section",
-		null,
+		{ className: "row center-text" },
 		_react2.default.createElement("image", { className: "img-responsive center-block", src: props.imgUrl, width: props.imgWidth, height: props.imgHeight }),
 		_react2.default.createElement(
 			"div",
-			null,
+			{ className: "col-sm-8 center-column" },
 			props.caption
 		)
 	);
@@ -189,13 +189,13 @@ function Quote(props) {
 exports.default = Quote;
 
 },{"react":355}],5:[function(require,module,exports){
-'use strict';
+"use strict";
 
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
-var _react = require('react');
+var _react = require("react");
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -205,28 +205,29 @@ function Timeline(props) {
 	var timelineList = props.timelineArray;
 	var newArray = timelineList.map(function (val, i) {
 		return _react2.default.createElement(
-			'li',
+			"li",
 			{ key: i },
 			_react2.default.createElement(
-				'strong',
+				"strong",
 				null,
+				"-",
 				val.year,
-				' '
+				": "
 			),
 			val.content
 		);
 	});
 	return _react2.default.createElement(
-		'section',
-		null,
+		"section",
+		{ className: "row" },
 		_react2.default.createElement(
-			'h3',
-			null,
-			'Here is a time line of Ada Lovelace\'s life:'
+			"h3",
+			{ className: "col-sm-8 center-block" },
+			"Here is a time line of Ada Lovelace's life:"
 		),
 		_react2.default.createElement(
-			'ul',
-			null,
+			"ul",
+			{ className: "col-sm-10 center-block" },
 			newArray
 		)
 	);
@@ -235,13 +236,13 @@ function Timeline(props) {
 exports.default = Timeline;
 
 },{"react":355}],6:[function(require,module,exports){
-'use strict';
+"use strict";
 
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
-var _react = require('react');
+var _react = require("react");
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -249,15 +250,15 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function ContentTitle(props) {
 	return _react2.default.createElement(
-		'section',
-		null,
+		"section",
+		{ className: "center-text" },
 		_react2.default.createElement(
-			'h1',
+			"h1",
 			null,
 			props.pageTitle
 		),
 		_react2.default.createElement(
-			'h2',
+			"h2",
 			null,
 			props.tagLine
 		)

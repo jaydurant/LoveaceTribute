@@ -1,0 +1,15 @@
+
+
+.center-text{
+	@include align(center);
+}
+
+.center-column{
+	@include inline-block();
+	float:none;
+}
+
+.center-block{
+	@include margin-auto();
+	float:none;
+}

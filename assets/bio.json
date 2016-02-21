@@ -1,7 +1,7 @@
 {
 	"bio" : {
 		"name":"Ada Lovelace",
-		"tagLine":"World's first programmer"
+		"tagLine":"World's First Programmer"
 	},
 	"timeLine" : [
 		{"year":"1815","content":"Born to Lord Byron as his only legitimate child as the Countess of Lovelace"},

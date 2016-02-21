@@ -2,7 +2,7 @@ import React from 'react';
 
 function ContentTitle(props){
 	return (
-			<section>
+			<section className="center-text">
 				<h1>{props.pageTitle}</h1>
 				<h2>{props.tagLine}</h2>
 			</section>
