@@ -138,11 +138,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function ContentImage(props) {
 	return _react2.default.createElement(
-		"section",
+		"figure",
 		{ className: "row center-text" },
 		_react2.default.createElement("image", { className: "img-responsive center-block", src: props.imgUrl, width: props.imgWidth, height: props.imgHeight }),
 		_react2.default.createElement(
-			"div",
+			"figcaption",
 			{ className: "col-sm-8 center-column" },
 			props.caption
 		)
