@@ -1,4 +1,3 @@
-
 h1{
 	font-size: 50px;
 	text-decoration:underline;
@@ -18,18 +17,29 @@ h1{
 .quote-text{
 	@extend .figure-text;
 	@include align(center);
+	padding: 0 6px;
 
 }
 
 .wiki-text{
 	@extend .figure-text;
 	@include inline-block();
-	padding: 0 6px;
+	
 }
 
-blockquote p:last-of-type{
-	@extend .wiki-text;
+
+
+blockquote{ 
+
+	p:first-of-type{
+		@extend .quote-text;
+	}
+
+	p:last-of-type{
+		@extend .wiki-text;
 	
+	}
+
 }
 
 //Links
