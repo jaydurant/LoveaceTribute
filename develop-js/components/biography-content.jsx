@@ -30,7 +30,6 @@ class BiographyContent extends React.Component {
 	componentDidMount(){
 		this.xhr(JSON.parse,{url:this.props.url}).then((data) => {
 			this.setState({cebName: data.bio.name,tagLine: data.bio.tagLine,timelineArray: data.timeLine,wikiUrl: data.wikiUrl,quote:data.quote});
-			console.log(this.state.wikiTitle);
 		});
 	}
 
