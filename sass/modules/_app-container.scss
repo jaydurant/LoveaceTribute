@@ -1,0 +1,14 @@
+//Document Container Styles
+.container-background{
+	background-color:$mainColor;
+	@include roundedCorners(20);
+}
+
+.section-container{
+	padding-top:2%;
+}
+
+.text-background{
+	background-color:$textbackColor;
+	@include roundedCorners(20);
+}

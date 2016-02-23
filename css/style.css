@@ -4412,3 +4412,49 @@ button {
   margin-left: auto;
   margin-right: auto;
   float: none; }
+
+.img-frame {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  padding: 1%; }
+
+.img-main {
+  max-width: 500px; }
+
+.figure-text, .list-text, .quote-text, .wiki-text {
+  font-size: 16px; }
+
+.quote-text {
+  text-align: center; }
+
+.wiki-text {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline; }
+
+blockquote p:last-of-type {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  padding: 0 4px; }
+
+.interact-link:hover, .interact-link:focus, .interact-link:visited {
+  color: red; }
+
+.container-background {
+  background-color: #657FB3;
+  border-radius: 20px; }
+
+.section-container {
+  padding-top: 2%; }
+
+.text-background, .img-frame {
+  background-color: #eee;
+  border-radius: 20px; }

@@ -36,7 +36,7 @@ class BiographyContent extends React.Component {
 	render(){
 
 		return(
-			<div className="container">
+			<div className="container container-background">
 				<ContentTitle pageTitle={this.state.cebName} tagLine={this.state.tagLine} />
 				<ContentImage imgUrl={this.state.imgUrl} imgWidth={this.state.imgWidth} imgHeight={this.state.imgHeight} caption={this.state.imgCaption}/>
 				<Timeline timelineArray={this.state.timelineArray}/>

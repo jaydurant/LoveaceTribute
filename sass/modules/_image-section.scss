@@ -1,0 +1,9 @@
+.img-frame{
+	@include inline-block();
+	padding: 1%;
+	@extend .text-background;
+}
+
+.img-main{
+	max-width: 500px;
+}

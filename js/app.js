@@ -108,7 +108,7 @@ var BiographyContent = function (_React$Component) {
 
 			return _react2.default.createElement(
 				'div',
-				{ className: 'container' },
+				{ className: 'container container-background' },
 				_react2.default.createElement(_titleContent2.default, { pageTitle: this.state.cebName, tagLine: this.state.tagLine }),
 				_react2.default.createElement(_imageContent2.default, { imgUrl: this.state.imgUrl, imgWidth: this.state.imgWidth, imgHeight: this.state.imgHeight, caption: this.state.imgCaption }),
 				_react2.default.createElement(_timelineContent2.default, { timelineArray: this.state.timelineArray }),
@@ -138,13 +138,17 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function ContentImage(props) {
 	return _react2.default.createElement(
-		"figure",
-		{ className: "row center-text" },
-		_react2.default.createElement("image", { className: "img-responsive center-block", src: props.imgUrl, width: props.imgWidth, height: props.imgHeight }),
+		"section",
+		{ className: "row center-text section-container" },
 		_react2.default.createElement(
-			"figcaption",
-			{ className: "col-sm-8 center-column" },
-			props.caption
+			"figure",
+			{ className: "img-frame img-main" },
+			_react2.default.createElement("image", { className: "img-responsive", src: props.imgUrl, width: props.imgWidth, height: props.imgHeight }),
+			_react2.default.createElement(
+				"figcaption",
+				{ className: "figure-text" },
+				props.caption
+			)
 		)
 	);
 }
@@ -168,18 +172,18 @@ function Quote(props) {
 	console.log(props.quote.url);
 	return _react2.default.createElement(
 		'section',
-		null,
+		{ className: 'sectionContainer' },
 		_react2.default.createElement(
 			'blockquote',
-			{ cite: props.quote.url },
+			{ className: 'quote-text center-text', cite: props.quote.url },
 			_react2.default.createElement(
 				'p',
-				null,
+				{ className: 'text-background' },
 				props.quote.content
 			),
 			_react2.default.createElement(
 				'p',
-				null,
+				{ className: 'text-background' },
 				props.quote.author
 			)
 		)
@@ -189,13 +193,13 @@ function Quote(props) {
 exports.default = Quote;
 
 },{"react":355}],5:[function(require,module,exports){
-"use strict";
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
 	value: true
 });
 
-var _react = require("react");
+var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -205,29 +209,29 @@ function Timeline(props) {
 	var timelineList = props.timelineArray;
 	var newArray = timelineList.map(function (val, i) {
 		return _react2.default.createElement(
-			"li",
+			'li',
 			{ key: i },
 			_react2.default.createElement(
-				"strong",
+				'strong',
 				null,
-				"-",
+				'-',
 				val.year,
-				": "
+				': '
 			),
 			val.content
 		);
 	});
 	return _react2.default.createElement(
-		"section",
-		{ className: "row" },
+		'section',
+		{ className: 'row section-container' },
 		_react2.default.createElement(
-			"h3",
-			{ className: "col-sm-8 center-block" },
-			"Here is a time line of Ada Lovelace's life:"
+			'h3',
+			{ className: 'col-sm-8 center-block' },
+			'Here is a time line of Ada Lovelace\'s life:'
 		),
 		_react2.default.createElement(
-			"ul",
-			{ className: "col-sm-10 center-block" },
+			'ul',
+			{ className: 'col-sm-10 center-block list-text text-background' },
 			newArray
 		)
 	);
@@ -251,7 +255,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function ContentTitle(props) {
 	return _react2.default.createElement(
 		"section",
-		{ className: "center-text" },
+		{ className: "center-text section-container" },
 		_react2.default.createElement(
 			"h1",
 			null,
@@ -283,14 +287,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function WikiEntry(props) {
 	return _react2.default.createElement(
 		'section',
-		null,
+		{ className: 'center-text section-container' },
 		_react2.default.createElement(
 			'p',
-			null,
+			{ className: 'wiki-text text-background' },
 			'If you would like to learn more about this important person in history please ',
 			_react2.default.createElement(
 				'a',
-				{ href: props.wikiUrl, title: props.wikiTitle },
+				{ className: 'interact-link', href: props.wikiUrl, title: props.wikiTitle },
 				'view this wikipedia entry'
 			),
 			'.'

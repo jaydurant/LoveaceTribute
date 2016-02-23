@@ -7,7 +7,7 @@
  // example @include hoverFocus('text-decoration', 'none');
 
 @mixin hoverFocus($property, $value) {
-  &:hover, &:focus {
+  &:hover, &:focus, &:visited{
     #{$property}: $value;
   }
 }

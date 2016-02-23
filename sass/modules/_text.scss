@@ -1,0 +1,30 @@
+
+.figure-text{
+	font-size: $mediumSize + px;
+		
+}
+
+.list-text{
+	@extend .figure-text;
+}
+
+.quote-text{
+	@extend .figure-text;
+	@include align(center);
+
+}
+
+.wiki-text{
+	@extend .figure-text;
+	@include inline-block();
+}
+
+blockquote p:last-of-type{
+	@include inline-block();
+	padding: 0 4px;
+}
+
+//Links
+.interact-link{
+	@include hoverFocus('color',red);
+}
