@@ -4426,25 +4426,25 @@ h1 {
   text-decoration: underline;
   font-style: italic; }
 
-.figure-text, .list-text, .quote-text, .wiki-text, blockquote p:last-of-type {
+.figure-text, .list-text, .quote-text, blockquote p:first-of-type, .wiki-text, blockquote p:last-of-type {
   font-size: 16px; }
 
-.quote-text {
-  text-align: center; }
+.quote-text, blockquote p:first-of-type {
+  text-align: center;
+  padding: 0 6px; }
 
 .wiki-text, blockquote p:last-of-type {
   display: -moz-inline-stack;
   display: inline-block;
   vertical-align: top;
   zoom: 1;
-  *display: inline;
-  padding: 0 6px; }
+  *display: inline; }
 
 .interact-link:hover, .interact-link:focus, .interact-link:visited {
   color: red; }
 
 .container-background {
-  background-color: #657FB3;
+  background-color: #c7c7c7;
   border-radius: 20px; }
 
 .section-container {

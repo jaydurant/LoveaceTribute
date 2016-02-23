@@ -172,10 +172,10 @@ function Quote(props) {
 	console.log(props.quote.url);
 	return _react2.default.createElement(
 		'section',
-		{ className: 'sectionContainer' },
+		{ className: 'section-container' },
 		_react2.default.createElement(
 			'blockquote',
-			{ className: 'quote-text center-text', cite: props.quote.url },
+			{ className: 'quote-text center-text col-sm-11 center-block', cite: props.quote.url },
 			_react2.default.createElement(
 				'p',
 				{ className: 'text-background' },
