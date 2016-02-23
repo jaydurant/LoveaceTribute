@@ -4349,9 +4349,6 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
-* {
-  border: 1px solid red; }
-
 html {
   font-size: 100%;
   box-sizing: border-box; }
@@ -4424,26 +4421,24 @@ button {
 .img-main {
   max-width: 500px; }
 
-.figure-text, .list-text, .quote-text, .wiki-text {
+h1 {
+  font-size: 50px;
+  text-decoration: underline;
+  font-style: italic; }
+
+.figure-text, .list-text, .quote-text, .wiki-text, blockquote p:last-of-type {
   font-size: 16px; }
 
 .quote-text {
   text-align: center; }
 
-.wiki-text {
-  display: -moz-inline-stack;
-  display: inline-block;
-  vertical-align: top;
-  zoom: 1;
-  *display: inline; }
-
-blockquote p:last-of-type {
+.wiki-text, blockquote p:last-of-type {
   display: -moz-inline-stack;
   display: inline-block;
   vertical-align: top;
   zoom: 1;
   *display: inline;
-  padding: 0 4px; }
+  padding: 0 6px; }
 
 .interact-link:hover, .interact-link:focus, .interact-link:visited {
   color: red; }

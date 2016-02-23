@@ -1,4 +1,11 @@
 
+h1{
+	font-size: 50px;
+	text-decoration:underline;
+	font-style: italic;
+}
+
+
 .figure-text{
 	font-size: $mediumSize + px;
 		
@@ -17,11 +24,12 @@
 .wiki-text{
 	@extend .figure-text;
 	@include inline-block();
+	padding: 0 6px;
 }
 
 blockquote p:last-of-type{
-	@include inline-block();
-	padding: 0 4px;
+	@extend .wiki-text;
+	
 }
 
 //Links
