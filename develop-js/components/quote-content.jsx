@@ -1,7 +1,6 @@
 import React from 'react';
 
 function Quote(props){
-	console.log(props.quote.url);
 	return(
 			<section className='section-container'>
 				<blockquote className='quote-text center-text col-sm-11 center-block' cite={props.quote.url}>

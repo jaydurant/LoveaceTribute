@@ -99,7 +99,8 @@ var BiographyContent = function (_React$Component) {
 			var _this2 = this;
 
 			this.xhr(JSON.parse, { url: this.props.url }).then(function (data) {
-				_this2.setState({ cebName: data.bio.name, tagLine: data.bio.tagLine, timelineArray: data.timeLine, wiki: data.wikiUrl, wikiTitle: data.wikiTitle, quote: data.quote });
+				_this2.setState({ cebName: data.bio.name, tagLine: data.bio.tagLine, timelineArray: data.timeLine, wikiUrl: data.wikiUrl, quote: data.quote });
+				console.log(_this2.state.wikiTitle);
 			});
 		}
 	}, {
@@ -113,7 +114,7 @@ var BiographyContent = function (_React$Component) {
 				_react2.default.createElement(_imageContent2.default, { imgUrl: this.state.imgUrl, imgWidth: this.state.imgWidth, imgHeight: this.state.imgHeight, caption: this.state.imgCaption }),
 				_react2.default.createElement(_timelineContent2.default, { timelineArray: this.state.timelineArray }),
 				_react2.default.createElement(_quoteContent2.default, { quote: this.state.quote }),
-				_react2.default.createElement(_wikientryContent2.default, { wikiUrl: this.state.wiki, wikiTitle: this.state.wikiTitle })
+				_react2.default.createElement(_wikientryContent2.default, { wikiUrl: this.state.wikiUrl, wikiTitle: this.state.wikiTitle })
 			);
 		}
 	}]);
@@ -169,7 +170,6 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Quote(props) {
-	console.log(props.quote.url);
 	return _react2.default.createElement(
 		'section',
 		{ className: 'section-container' },
