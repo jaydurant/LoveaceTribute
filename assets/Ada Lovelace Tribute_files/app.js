@@ -100,6 +100,7 @@ var BiographyContent = function (_React$Component) {
 
 			this.xhr(JSON.parse, { url: this.props.url }).then(function (data) {
 				_this2.setState({ cebName: data.bio.name, tagLine: data.bio.tagLine, timelineArray: data.timeLine, wikiUrl: data.wikiUrl, quote: data.quote });
+				console.log(_this2.state.wikiTitle);
 			});
 		}
 	}, {

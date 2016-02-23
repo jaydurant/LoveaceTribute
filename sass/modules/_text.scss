@@ -22,7 +22,7 @@ h1{
 }
 
 .wiki-text{
-	@extend .figure-text;
+	@extend .quote-text; 
 	@include inline-block();
 	
 }

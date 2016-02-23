@@ -22,14 +22,14 @@ class BiographyContent extends React.Component {
 			timelineArray:[],
 			quote:{},
 			wikiUrl:'',
-			wikiTitle:'wikipedia page for Ada Lovelace',
+			wikiTitle:'wikipedia page for Ada Lovelace'
 		};
 		this.xhr = xhr;
 	}
 
 	componentDidMount(){
 		this.xhr(JSON.parse,{url:this.props.url}).then((data) => {
-			this.setState({cebName: data.bio.name,tagLine: data.bio.tagLine,timelineArray: data.timeLine,wiki: data.wikiUrl,wikiTitle: data.wikiTitle,quote:data.quote});
+			this.setState({cebName: data.bio.name,tagLine: data.bio.tagLine,timelineArray: data.timeLine,wikiUrl: data.wikiUrl,quote:data.quote});
 		});
 	}
 
@@ -41,7 +41,7 @@ class BiographyContent extends React.Component {
 				<ContentImage imgUrl={this.state.imgUrl} imgWidth={this.state.imgWidth} imgHeight={this.state.imgHeight} caption={this.state.imgCaption}/>
 				<Timeline timelineArray={this.state.timelineArray}/>
 				<Quote quote={this.state.quote} />
-				<WikiEntry wikiUrl={this.state.wiki} wikiTitle={this.state.wikiTitle} />
+				<WikiEntry wikiUrl={this.state.wikiUrl} wikiTitle={this.state.wikiTitle} />
 			</div>
 			);
 	}
